@@ -1,24 +1,24 @@
 # Step 4: Data Validation with Great Expectations
 
-ML pipeline with data validation using Great Expectations and Data Docs.
+ML пайплайн с валидацией данных используя Great Expectations и Data Docs.
 
-## Setup
-```bash
-make install
+## Установка
+```make install
 dvc init
 dvc remote add -d local ../../.dvcstore
 ```
 
-## Run
+## Запуск
 ```bash
 dvc repro
 ```
 
-Pipeline includes data validation step that:
-- Checks for null values in total_bill, tip, size
-- Validates total_bill range [0, 100]
-- Validates size range [1, 10]
-- Generates beautiful HTML validation report at `reports/validation/index.html`
-- Stops pipeline if validation fails
+Пайплайн включает шаг валидации данных, который:
 
-Open `reports/validation/index.html` in browser to see detailed validation report with styled results and statistics.
+- Проверяет отсутствие пустых значений в total_bill, tip, size
+- Проверяет что total_bill в диапазоне [0, 100]
+- Проверяет что size в диапазоне [1, 10]
+- Генерирует красивый HTML отчет по валидации в reports/validation/index.html
+- Останавливает пайплайн если валидация не пройдена
+
+Детальный отчёт можно посмотреть в браузере reports/validation/index.html.
