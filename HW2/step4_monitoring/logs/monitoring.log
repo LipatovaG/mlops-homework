@@ -1,0 +1,4 @@
+{"timestamp": "2025-10-21T14:31:29.576305", "endpoint": "/health", "status_code": 503, "response_time_ms": 2068.75, "success": false, "consecutive_failures": 0, "p95_latency": 2068.75, "error_rate": 0.0}
+{"timestamp": "2025-10-21T14:32:01.654674", "endpoint": "/health", "status_code": 503, "response_time_ms": 2076.78, "success": false, "consecutive_failures": 1, "p95_latency": 2076.78, "error_rate": 50.0}
+{"timestamp": "2025-10-21T14:32:33.683783", "endpoint": "/health", "status_code": 503, "response_time_ms": 2026.02, "success": false, "consecutive_failures": 2, "p95_latency": 2076.78, "error_rate": 66.67}
+{"timestamp": "2025-10-21T14:33:05.755480", "endpoint": "/health", "status_code": 503, "response_time_ms": 2059.02, "success": false, "consecutive_failures": 3, "p95_latency": 2076.78, "error_rate": 75.0}
